@@ -324,24 +324,30 @@
         }
         let newScores = [];
 
-        let newFriend = {
-            name: $('#name').val(),
-            photo: $('#photo').val(),
-            scores: newScores
-        };
+        
 
         $(document).ready(function () {
             hideAll();
         })
 
         $('.qBtn').click(function () {
-            questionUp();
-            hideAll();
+            questionUp(); //increase questionNumber
+            hideAll(); //hide current question choices and show next ones
             console.log(this.value);
             newScores.push(this.value);
-            console.log('newScores array: ' + newScores)
-            console.log('newFriend: ' + newFriend.name);
-        })
+        });
+
+        $('#submitBtn').click(function () {
+            let newFriend = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores: newScores
+        };
+        console.log('newFriend photo: ' + newFriend.photo);
+        /* $.post('/api/friends', newFriend, function(data) {
+
+        }) */
+        });
 
 
     </script>
