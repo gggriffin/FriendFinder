@@ -65,7 +65,7 @@ const friends = [
     },
     {
         name: 'Rachel Raccoon',
-        photo: 'https://images.pexels.com/photos/54602/raccoon-bear-zoo-saeugentier-54602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+        photo: 'https://images.pexels.com/photos/54602/raccoon-bear-zoo-saeugentier-54602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=170',
         scores: [
             '5',
             '1',

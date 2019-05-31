@@ -284,8 +284,7 @@
         </div>
 
         <div class="qCard" id="q11">
-            <button type="submit" class="btn btn-primary btn-lg btn-block mb-2" data-toggle="modal" data-target="#matchModal"
-                id="submitBtn">
+            <button type="submit" class="btn btn-primary btn-lg btn-block mb-2" id="submitBtn">
                 <i class="fa fa-check-circle" aria-hidden="true"></i>
                 Submit
             </button>
@@ -313,8 +312,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <h4 id="matchName">Match Name</h4>
-                    <img src="https://images.pexels.com/photos/54602/raccoon-bear-zoo-saeugentier-54602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=175" alt="" id="matchPhoto">
+                    <h4 id="matchName"></h4>
+                    <img src="" alt="" id="matchPhoto">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -359,6 +358,12 @@
                 scores: newScores
             };
             $.post('/api/friends', newFriend, function (data) {
+                $('#matchName').text(data.name);
+                $('#matchPhoto').attr('src', data.photo);
+
+                $('#matchModal').modal('toggle');
+                console.log(data.photo);
+
             });
 
         });
