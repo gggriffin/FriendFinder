@@ -1,7 +1,7 @@
 const friends = [
     {
         name: 'Thomas Turtle',
-        photo: 'https://images.pexels.com/photos/60087/pexels-photo-60087.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        photo: 'https://images.pexels.com/photos/60087/pexels-photo-60087.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=175',
         scores: [
             '2',
             '5',
@@ -17,7 +17,7 @@ const friends = [
     },
     {
         name: 'Steve Squirrel',
-        photo: 'https://images.pexels.com/photos/416163/pexels-photo-416163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        photo: 'https://images.pexels.com/photos/416163/pexels-photo-416163.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=175',
         scores: [
             '5',
             '4',
@@ -33,7 +33,7 @@ const friends = [
     },
     {
         name: 'Benny Bear',
-        photo: 'https://images.pexels.com/photos/213988/pexels-photo-213988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        photo: 'https://images.pexels.com/photos/213988/pexels-photo-213988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=175',
         scores: [
             '5',
             '3',
@@ -49,7 +49,7 @@ const friends = [
     },
     {
         name: 'Jack Danger, Wonderpug',
-        photo: 'https://images.pexels.com/photos/1851471/pexels-photo-1851471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+        photo: 'https://images.pexels.com/photos/1851471/pexels-photo-1851471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=175',
         scores: [
             '1',
             '4',
