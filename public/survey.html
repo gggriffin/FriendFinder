@@ -284,7 +284,8 @@
         </div>
 
         <div class="qCard" id="q11">
-            <button type="submit" class="btn btn-primary btn-lg btn-block mb-2" id="submitBtn">
+            <button type="submit" class="btn btn-primary btn-lg btn-block mb-2" data-toggle="modal" data-target="#matchModal"
+                id="submitBtn">
                 <i class="fa fa-check-circle" aria-hidden="true"></i>
                 Submit
             </button>
@@ -302,8 +303,28 @@
 
     </div>
 
+    <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Your Match</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 id="matchName">Match Name</h4>
+                    <img src="https://images.pexels.com/photos/54602/raccoon-bear-zoo-saeugentier-54602.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=175" alt="" id="matchPhoto">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -319,34 +340,27 @@
             $('#q' + questionNumber).show();
         }
 
-        function questionUp() {
-            questionNumber++
-        }
         let newScores = [];
-
-        
 
         $(document).ready(function () {
             hideAll();
         })
 
         $('.qBtn').click(function () {
-            questionUp(); //increase questionNumber
+            questionNumber++; //increase questionNumber
             hideAll(); //hide current question choices and show next ones
-            console.log(this.value);
-            newScores.push(this.value);
+            newScores.push(this.value);//adds value of selected answer to newScores array
         });
 
         $('#submitBtn').click(function () {
             let newFriend = {
-            name: $("#name").val(),
-            photo: $("#photo").val(),
-            scores: newScores
-        };
-        console.log('newFriend photo: ' + newFriend.photo);
-        /* $.post('/api/friends', newFriend, function(data) {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: newScores
+            };
+            $.post('/api/friends', newFriend, function (data) {
+            });
 
-        }) */
         });
 
 
