@@ -8,3 +8,5 @@ Dummy data was entered at first in order to test functionality prior to deployme
 
 <img src="/images/FriendFinder_Match.png" width= 300px; height=400px;>
 
+<img src="/images/Bamazon_Screenshot.png" width= 420px; height= 200px;>
+
