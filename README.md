@@ -1,6 +1,6 @@
 # FriendFinder
 
-<img src="/images/FriendFinder_Match.png" width= 300px; height= 200px;>
+<img src="images/FriendFinder_Match.png" width= 300px; height= 200px;>
 
 FriendFinder is a full stack compatibility app that uses several Node.js packages and Express to handle server requests and routing. The application accepts user responses to several personality questions and compares them to the responses received by previous users. Once the user completes the survey and receives their match, that users' responses are then added to the list of friends and used in future comparisons. 
 
