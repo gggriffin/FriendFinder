@@ -6,5 +6,5 @@ One of the largest challenges was deciding how to calculate the compatibility ra
 
 Dummy data was entered at first in order to test functionality prior to deployment, hence our good friend Thomas Turtle.
 
-<img src="/images/FriendFinder_Match" width= 300px; height=400px;/>
+<img src="/images/FriendFinder_Match.png" width= 300px; height=400px;/>
 
