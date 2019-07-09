@@ -4,7 +4,7 @@ FriendFinder is a full stack compatibility app that uses several Node.js package
 
 One of the largest challenges was deciding how to calculate the compatibility rating between two sets of user responses. This was accomplished by giving all of the responses a value of 1-5 and then comparing the absolute value of the user response against every other response submitted previously. The sum of these absolute values are compared against every response in the database. The lowest sum is then matched with the user. 
 
-Dummy data was entered at first in order to test functionality prior to deployment, hence our good friend Thomas Turtle
+Dummy data was entered at first in order to test functionality prior to deployment, hence our good friend Thomas Turtle.
 
 <img src="/images/FriendFinder_Match" width= 300px; height=400px;>
 
