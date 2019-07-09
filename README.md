@@ -1,6 +1,6 @@
 # FriendFinder
 
-<img src="/images/FriendFinder_Match.png">
+<img src="images/FriendFinder_Match.png">
 
 <img src="/images/Bamazon_Screenshot.png" width= 420px; height= 200px;>
 
